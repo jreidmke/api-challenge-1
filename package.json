@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rithmschool/api-challenge/issues"
   },
-  "homepage": "https://github.com/rithmschool/api-challenge#readme"
+  "homepage": "https://github.com/rithmschool/api-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
 }
