@@ -3,7 +3,6 @@
 /** Shared config for application; can be required many places. */
 
 require("dotenv").config();
-require("colors");
 
 
 const PORT =  process.env.PORT || 5000;
@@ -19,16 +18,11 @@ function getDatabaseUri() {
 //
 // WJB: Evaluate in 2021 if this should be increased to 13 for non-test use
 
-console.log("Jobly Config:".green);
-console.log("SECRET_KEY:".yellow, SECRET_KEY);
-console.log("PORT:".yellow, PORT.toString());
-console.log("BCRYPT_WORK_FACTOR".yellow, BCRYPT_WORK_FACTOR);
-console.log("Database:".yellow, getDatabaseUri());
+console.log("PORT:", PORT.toString());
+console.log("Database:", getDatabaseUri());
 console.log("---");
 
 module.exports = {
-  SECRET_KEY,
   PORT,
-  BCRYPT_WORK_FACTOR,
-  getDatabaseUri,
+  getDatabaseUri
 };
